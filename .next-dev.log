@@ -1,0 +1,29 @@
+
+> abs-website@1.0.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.2.8 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.73:3001
+
+ ✓ Starting...
+Creating turbopack project { dir: 'C:\\Users\\migue\\OneDrive\\Desktop\\ABS', testMode: true }
+ ✓ Ready in 896ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.5s
+ HEAD / 200 in 3017ms
+ GET / 200 in 205ms
+ ✓ Compiled /favicon.ico in 388ms
+ GET /favicon.ico?favicon.13098cf8.ico 200 in 455ms
+ GET / 200 in 178ms
+ GET /favicon.ico?favicon.13098cf8.ico 200 in 75ms
+ HEAD / 200 in 423ms
+ GET / 200 in 375ms
+ ○ Compiling /_not-found/page ...
+ GET /favicon.ico?favicon.13098cf8.ico 200 in 874ms
+ ✓ Compiled /_not-found/page in 2.6s
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 2789ms
+ ✓ Compiled in 132ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2s
+ ✓ Compiled in 286ms

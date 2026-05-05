@@ -1,0 +1,24 @@
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\migue\OneDrive\Desktop\ABS\.next\server\app\_not-found\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\migue\\OneDrive\\Desktop\\ABS\\.next\\server\\app\\_not-found\\page\\app-build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\migue\OneDrive\Desktop\ABS\.next\static\development\_buildManifest.js.tmp.14lcyis8gtu'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\migue\\OneDrive\\Desktop\\ABS\\.next\\static\\development\\_buildManifest.js.tmp.14lcyis8gtu'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\migue\OneDrive\Desktop\ABS\.next\static\development\_buildManifest.js.tmp.c4uctod98ov'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\migue\\OneDrive\\Desktop\\ABS\\.next\\static\\development\\_buildManifest.js.tmp.c4uctod98ov'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\migue\OneDrive\Desktop\ABS\.next\static\development\_buildManifest.js.tmp.fgfeqks4bn'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\migue\\OneDrive\\Desktop\\ABS\\.next\\static\\development\\_buildManifest.js.tmp.fgfeqks4bn'
+}

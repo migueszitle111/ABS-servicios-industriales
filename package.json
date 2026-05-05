@@ -1,0 +1,47 @@
+{
+  "name": "abs-website",
+  "author": {
+    "name": "ABS Servicios Industriales"
+  },
+  "license": "GPL-3.0",
+  "copyright": "Copyright (C) 2026 ABS Servicios Industriales",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@alvalens/react-fullpage-snap": "^1.0.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@tailwindcss/postcss": "^4.0.14",
+    "@vercel/analytics": "^1.5.0",
+    "eslint": "9.22.0",
+    "eslint-config-next": "15.2.9",
+    "framer-motion": "^12.5.0",
+    "next": "15.2.8",
+    "nprogress": "^0.2.0",
+    "postcss": "^8.5.3",
+    "prop-types": "^15.8.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@typescript-eslint/parser": "^8.54.0",
+      "@typescript-eslint/eslint-plugin": "^8.54.0",
+      "@typescript-eslint/type-utils": "^8.54.0",
+      "@typescript-eslint/utils": "^8.54.0",
+      "@typescript-eslint/typescript-estree": "^8.54.0"
+    }
+  }
+}
