@@ -28,13 +28,3 @@ npm run build
 npm run start
 ```
 
-## Variables opcionales
-
-- `NEXT_PUBLIC_SITE_URL`
-  Se usa para `metadataBase` en producción.
-
-Ejemplo:
-
-```env
-NEXT_PUBLIC_SITE_URL=https://tu-dominio.com
-```
