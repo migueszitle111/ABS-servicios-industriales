@@ -829,11 +829,7 @@ function ContactSectionContent() {
 							Correos
 						</p>
 						<div className="mb-6 space-y-2">
-							<a
-								href="mailto:herreriaavilamxbc@gmail.com"
-								className="block break-words text-lg text-black">
-								herreriaavilamxbc@gmail.com
-							</a>
+							
 							<a
 								href="mailto:admin@serviciosindustrialesabs.com"
 								className="block break-words text-lg text-black">
@@ -850,6 +846,17 @@ function ContactSectionContent() {
 									<path d="M20.52 3.48A11.78 11.78 0 0 0 12.13 0C5.6 0 .3 5.3.3 11.83c0 2.08.54 4.1 1.57 5.87L0 24l6.47-1.82a11.8 11.8 0 0 0 5.65 1.44h.01c6.52 0 11.82-5.3 11.82-11.83 0-3.16-1.23-6.13-3.43-8.31Zm-8.39 18.15h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.84 1.08 1.03-3.74-.24-.38A9.82 9.82 0 0 1 2.3 11.83C2.3 6.4 6.7 2 12.13 2c2.62 0 5.08 1.02 6.93 2.87a9.73 9.73 0 0 1 2.87 6.93c0 5.42-4.4 9.83-9.8 9.83Zm5.39-7.34c-.3-.15-1.78-.88-2.05-.98-.27-.1-.47-.15-.66.15-.2.3-.76.98-.93 1.18-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.48-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.34.44-.51.15-.17.2-.3.3-.49.1-.2.05-.37-.03-.52-.07-.15-.66-1.6-.9-2.19-.24-.58-.49-.5-.66-.51h-.56c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.09 3.19 5.06 4.47.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.78-.73 2.03-1.44.25-.71.25-1.32.17-1.44-.08-.13-.28-.2-.58-.35Z" />
 								</svg>
 								<span>WhatsApp</span>
+							</a>
+							<a
+								href="https://www.facebook.com/profile.php?id=61583252753485"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Abrir Facebook de ABS Servicios Industriales"
+								className="title inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#1877F2] px-8 py-2 text-white shadow-md transition duration-300 ease-in-out hover:bg-[#145dbf] sm:w-auto">
+								<svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 fill-current">
+									<path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z" />
+								</svg>
+								<span>Facebook</span>
 							</a>
 							<Button variation="secondary">
 								<a href="mailto:herreriaavilamxbc@gmail.com" className="inline-flex items-center gap-2">
