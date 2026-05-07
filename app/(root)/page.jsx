@@ -84,13 +84,7 @@ const portfolioItems = [
 			"Área delimitada con cortinas industriales para separar procesos de soldadura, controlar chispas y mejorar la seguridad visual y operativa dentro de planta.",
 		tech: ["Soldadura", "Seguridad", "Área de trabajo"],
 	},
-	{
-		title: "Cuartos de lona",
-		image: "/image/portafolio/1Cuartosdesoldadura.jpg",
-		description:
-			"Cuartos industriales con lona o cortina flexible para delimitar áreas de trabajo, contener polvo, chispas o salpicaduras y mantener procesos separados sin cerrar la visibilidad del área.",
-		tech: ["Lona industrial", "Separación", "Seguridad"],
-	},
+	
 	{
 		title: "Guardas de seguridad",
 		image: "/image/portafolio/2Guardasdeseguridad.jpg",
@@ -174,6 +168,13 @@ const portfolioItems = [
 		description:
 			"Rack industrial fabricado a medida con estructura reforzada para almacenamiento, manejo y traslado de componentes dentro de planta.",
 		tech: ["Racks", "A medida", "Manejo"],
+	},
+	{
+		title: "Cuartos de lona",
+		image: "/image/portafolio/14cuartosdelona.jpeg",
+		description:
+			"Cuartos industriales con lona o cortina flexible para delimitar áreas de trabajo, contener polvo, chispas o salpicaduras y mantener procesos separados sin cerrar la visibilidad del área.",
+		tech: ["Lona industrial", "Separación", "Seguridad"],
 	},
 ];
 
@@ -436,11 +437,11 @@ function PortfolioCard({ item, index, mobile = false }) {
 				src={item.image}
 				alt={item.title}
 				fill
-				quality={95}
+				unoptimized
 				className={`object-cover object-center transition-all duration-500 ease ${
 					showImageOnTouch ? "opacity-100" : "opacity-20 group-hover/tes:opacity-100"
 				}`}
-				sizes="(max-width: 768px) calc(100vw - 40px), (max-width: 1536px) 50vw, 760px"
+				sizes="(max-width: 768px) 100vw, 50vw"
 			/>
 			<div
 				className={`absolute inset-0 transition-all duration-500 ease ${
