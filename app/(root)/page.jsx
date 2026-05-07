@@ -16,153 +16,164 @@ import Button from "@/components/Button";
 import Hr from "@/components/Hr";
 
 const heroHighlights = [
-	"Portones y accesos de alto uso",
-	"Cercos y cerramientos perimetrales",
-	"Estructuras y soportes metálicos",
-	"Moldes y elementos especiales para obra",
+	"Diseño de soluciones para procesos de manufactura",
+	"Fabricación de estaciones de trabajo y mobiliario industrial",
+	"Implementación de mejoras ergonómicas y operativas",
+	"Desarrollo e instalación de áreas de trabajo industriales según requerimientos del proceso",
 ];
 
 const services = [
 	{
-		title: "Portones y accesos",
+		title: "Diseño de soluciones industriales",
 		description:
-			"Fabricación de portones corredizos, abatibles y seccionales para naves, locales y privados industriales.",
+			"Desarrollo de propuestas para optimizar procesos de manufactura mediante análisis de flujo, ergonomía y necesidades operativas.",
 	},
 	{
-		title: "Cercos y protección perimetral",
+		title: "Fabricación de mobiliario y componentes metálicos",
 		description:
-			"Cercos metálicos, mallas, barandales y soluciones de seguridad para delimitar y proteger áreas de trabajo.",
+			"Producción de mesas, carros, estructuras y elementos en acero y aluminio adaptados a procesos industriales.",
 	},
 	{
-		title: "Estructuras y soportes",
+		title: "Implementación de áreas de trabajo industriales",
 		description:
-			"Armado de estructuras, refuerzos, marcos y soportes metálicos para equipo, tuberías, racks y más.",
+			"Instalación de estaciones, áreas de ensamble, soldadura y espacios de trabajo adaptados a requerimientos operativos.",
 	},
 	{
-		title: "Moldes y piezas especiales",
+		title: "Fabricación de soluciones metálicas a medida o a partir de planos del cliente",
 		description:
-			"Diseño y fabricación de elementos metálicos especiales para colado, producción o procesos de obra civil.",
+			"Desarrollamos mobiliario, estructuras y componentes metálicos bajo especificaciones propias o planos proporcionados, asegurando precisión y funcionalidad en cada proyecto.",
 	},
 ];
 
 const workflowSteps = [
 	{
 		number: "01",
-		title: "Levantamiento y revisión",
+		title: "Requerimiento",
+		visual: "requirement",
 		description:
-			"Revisamos en sitio o con planos las necesidades del proyecto y tomamos medidas precisas.",
+			"Nos compartes tu necesidad o proyecto. Si cuentas con planos, los analizamos; si no, realizamos levantamiento en sitio.",
 	},
 	{
 		number: "02",
-		title: "Propuesta y cotización",
+		title: "Análisis y propuesta",
+		visual: "analysis",
 		description:
-			"Definimos materiales, espesores, acabados y tiempos de entrega, y presentamos una cotización clara.",
+			"Evaluamos el proceso y desarrollamos una solución enfocada en eficiencia, ergonomía y optimización operativa.",
 	},
 	{
 		number: "03",
-		title: "Fabricación y control",
+		title: "Cotización y validación",
+		visual: "validation",
 		description:
-			"Fabricación en taller con control de calidad en cortes, soldadura y armado de cada elemento.",
+			"Te enviamos una propuesta formal y, en caso de aprobación, generamos planos para validación antes de fabricación.",
 	},
 	{
 		number: "04",
-		title: "Instalación y entrega",
+		title: "Fabricación e implementación",
+		visual: "fabrication",
 		description:
-			"Montaje en sitio, revisión final en conjunto con el cliente y entrega del trabajo terminado.",
+			"Fabricamos e instalamos la solución conforme a lo acordado, lista para integrarse a tu proceso productivo.",
 	},
 ];
 
 const portfolioItems = [
 	{
-		title: "Rack acolchonado para equipos sensibles",
-		image: "/image/portafolio/1Rackacolchonado.jpg",
+		title: "Cuartos de soldadura",
+		image: "/image/portafolio/1Cuartosdesoldadura.jpg",
 		description:
-			"Estructura tubular con brazos acolchonados para transporte interno de equipos médicos y paneles pintados, diseñada para evitar rayones y golpes durante el movimiento en planta.",
-		tech: ["Racks industriales", "Transporte interno", "Protección"],
+			"Área delimitada con cortinas industriales para separar procesos de soldadura, controlar chispas y mejorar la seguridad visual y operativa dentro de planta.",
+		tech: ["Soldadura", "Seguridad", "Área de trabajo"],
 	},
 	{
-		title: "Módulo perimetral para cilindros de gas",
-		image: "/image/portafolio/2Moduloperimetral.jpg",
+		title: "Cuartos de lona",
+		image: "/image/portafolio/1Cuartosdesoldadura.jpg",
 		description:
-			"Cerramiento metálico con malla y recubrimiento para resguardo de cilindros industriales, cumpliendo requisitos de seguridad y señalización en exteriores de planta.",
-		tech: ["Cercos", "Seguridad", "Exterior"],
+			"Cuartos industriales con lona o cortina flexible para delimitar áreas de trabajo, contener polvo, chispas o salpicaduras y mantener procesos separados sin cerrar la visibilidad del área.",
+		tech: ["Lona industrial", "Separación", "Seguridad"],
 	},
 	{
-		title: "Rack compacto para paneles y cubiertas",
+		title: "Guardas de seguridad",
+		image: "/image/portafolio/2Guardasdeseguridad.jpg",
+		description:
+			"Guardas metálicas con malla para proteger áreas de proceso, separar equipos y mantener zonas de operación controladas para el personal.",
+		tech: ["Guardas", "Malla", "Seguridad"],
+	},
+	{
+		title: "Carros para manejo de piezas pintadas",
 		image: "/image/portafolio/3Rackcompactoparapaneles.jpg",
 		description:
 			"Carro metálico de baja altura con niveles acolchonados para manejo de piezas recubiertas, optimizando el flujo entre estaciones de trabajo.",
-		tech: ["Paneles", "Cubiertas", "Flujo"],
+		tech: ["Piezas pintadas", "Manejo", "Protección"],
 	},
 	{
-		title: "Plataforma de ensamble con rodillos",
-		image: "/image/portafolio/4Plataformadeensamble.jpg",
+		title: "Fixturas de izaje",
+		image: "/image/portafolio/4Fixturasdeizaje.jpg",
 		description:
-			"Plataforma metálica con escaleras, barandal y sistema de rodillos para línea de ensamble, diseñada para trabajo continuo y acceso seguro del personal.",
-		tech: ["Rodillos", "Ensamble", "Barandal"],
+			"Fixturas metálicas diseñadas para apoyar maniobras de izaje, posicionamiento y manejo seguro de componentes dentro del proceso productivo.",
+		tech: ["Izaje", "Fixturas", "Manejo"],
 	},
 	{
-		title: "Rack para paneles y perfiles metálicos",
+		title: "Carro para manejo de material",
 		image: "/image/portafolio/5Rackparapaneles.jpg",
 		description:
-			"Sistema de almacenamiento con múltiples niveles para paneles y perfiles, con ruedas para facilitar la alimentación de producción en áreas amplias.",
-		tech: ["Almacenamiento", "Perfiles", "Ruedas"],
+			"Rack móvil de múltiples niveles para alimentar líneas de producción y mover materiales de forma ordenada entre estaciones de trabajo.",
+		tech: ["Materiales", "Flujo", "Ruedas"],
 	},
 	{
-		title: "Carro contenedor con malla de protección",
+		title: "Carro para manejo de material",
 		image: "/image/portafolio/6Carrocontenedorconmalla.jpg",
 		description:
 			"Carro con malla metálica y niveles inferiores para transporte y resguardo de piezas, evitando caídas y manteniendo el área de trabajo ordenada.",
 		tech: ["Malla", "Contenedor", "Orden"],
 	},
 	{
-		title: "Carro porta-puertas y paneles verticales",
-		image: "/image/portafolio/7Carroportapuertas.jpg",
+		title: "Carros de material lean",
+		image: "/image/portafolio/7Carrosdemateriallean.jpg",
 		description:
-			"Estructura móvil para manejo de puertas y paneles altos, con guías y rodajas para desplazar las piezas de forma segura entre procesos.",
-		tech: ["Puertas", "Paneles", "Rodajas"],
+			"Carros industriales para manejo lean de materiales, con niveles definidos y ruedas para facilitar el surtido y movimiento dentro de planta.",
+		tech: ["Lean", "Materiales", "Movilidad"],
 	},
 	{
-		title: "Guardas perimetrales para área de proceso",
-		image: "/image/portafolio/8Guardasperimetralesparaarea.jpg",
+		title: "Fixturas de perfil de aluminio",
+		image: "/image/portafolio/8Fixturasdeperfilaluminio.jpg",
 		description:
-			"Cerramiento con malla y acceso por puertas para separar equipos, tambos y líneas de proceso del área de circulación del personal.",
-		tech: ["Guardas", "Malla", "Accesos"],
+			"Fixturas fabricadas con perfil de aluminio para soporte, posicionamiento y repetibilidad en procesos de ensamble o validación.",
+		tech: ["Aluminio", "Fixturas", "Ensamble"],
 	},
 	{
-		title: "Mesa rodante de trabajo para armado",
+		title: "Mesa de trabajo",
 		image: "/image/portafolio/9Mesarodantedetrabajo.jpg",
 		description:
-			"Mesa industrial de gran longitud con estructura reforzada y ruedas de alto desempeño para armado y movimiento de piezas de gran formato.",
-		tech: ["Mesa", "Armado", "Ruedas"],
+			"Mesa industrial rodante para trabajo, armado y soporte de piezas, fabricada a medida para integrarse al flujo de operación.",
+		tech: ["Mesa", "Trabajo", "Ruedas"],
 	},
 	{
-		title: "Dispositivo de sujeción para cortes y armado",
+		title: "Maquinado de fixturas",
 		image: "/image/portafolio/10Dispositivodesujecionparacortes.jpg",
 		description:
 			"Jig metálico de precisión montado sobre mesa, diseñado para fijar piezas a 90 grados y agilizar operaciones repetitivas de corte, barrenado o armado.",
 		tech: ["Jig", "Corte", "Armado"],
 	},
 	{
-		title: "Rack para materiales y perfiles largos",
+		title: "Carro para manejo de material",
 		image: "/image/portafolio/11Rackparamaterialesyperfiles.jpg",
 		description:
 			"Estructura metálica reforzada diseñada para el manejo de piezas alargadas, ideal para líneas de producción con movimiento continuo de perfiles y componentes de gran longitud.",
 		tech: ["Perfiles", "Materiales", "Manejo"],
 	},
 	{
-		title: "Plantilla de aluminio para posicionamiento",
+		title: "Maquinado de piezas",
 		image: "/image/portafolio/12Plantilladealuminio.jpg",
 		description:
 			"Jig de precisión fabricado en aluminio, utilizado para asegurar posicionamiento exacto en procesos repetitivos de corte, ensamble o verificación dimensional dentro de planta.",
 		tech: ["Aluminio", "Posicionamiento", "Precisión"],
 	},
 	{
-		title: "Carro reforzado para estructuras metálicas",
+		title: "Racks fabricados a medida",
 		image: "/image/portafolio/13Carroreforzado.jpg",
 		description:
-			"Carro industrial a la medida con bastidor tubular reforzado, ruedas grado industrial y área abierta para manejar estructuras metálicas de gran tamaño con seguridad y movilidad.",
-		tech: ["Bastidor", "Transporte", "Estructuras"],
+			"Rack industrial fabricado a medida con estructura reforzada para almacenamiento, manejo y traslado de componentes dentro de planta.",
+		tech: ["Racks", "A medida", "Manejo"],
 	},
 ];
 
@@ -425,11 +436,11 @@ function PortfolioCard({ item, index, mobile = false }) {
 				src={item.image}
 				alt={item.title}
 				fill
-				unoptimized
+				quality={95}
 				className={`object-cover object-center transition-all duration-500 ease ${
 					showImageOnTouch ? "opacity-100" : "opacity-20 group-hover/tes:opacity-100"
 				}`}
-				sizes="(max-width: 768px) 100vw, 50vw"
+				sizes="(max-width: 768px) calc(100vw - 40px), (max-width: 1536px) 50vw, 760px"
 			/>
 			<div
 				className={`absolute inset-0 transition-all duration-500 ease ${
@@ -505,11 +516,11 @@ function HomeSectionContent({ mobile = false }) {
 								<p className="text-[11px] uppercase tracking-[0.28em] text-white/70">
 									ABS Servicios Industriales
 								</p>
-								<h2 className="mt-3 text-[1.85rem] font-bold leading-tight">
-									Especialistas en herrería industrial
+								<h2 className="mt-3 text-[1.45rem] font-bold leading-[1.18] sm:text-[1.6rem]">
+									Soluciones en metal y manufactura enfocadas en la optimización de procesos industriales.
 								</h2>
 							</div>
-							<div className="space-y-4">
+							<div className="space-y-3">
 								<div className="rounded-2xl border border-white/10 bg-[var(--abs-ink)] px-3 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.26)]">
 									<div className="flex items-center gap-3">
 										<Image
@@ -529,14 +540,14 @@ function HomeSectionContent({ mobile = false }) {
 										</div>
 									</div>
 								</div>
-								<ul className="space-y-2.5">
+								<ul className="space-y-2">
 									{heroHighlights.map((item) => (
 										<li key={item} className="flex items-start gap-3">
 											<FontAwesomeIcon
 												icon={faCheck}
 												className="mt-1 text-sm text-[var(--abs-red)]"
 											/>
-											<span className="text-[0.95rem] leading-relaxed">{item}</span>
+											<span className="text-[0.88rem] leading-snug sm:text-[0.95rem]">{item}</span>
 										</li>
 									))}
 								</ul>
@@ -565,9 +576,9 @@ function HomeSectionContent({ mobile = false }) {
 						initial={{ x: -100, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ delay: 0.2, type: "spring" }}>
-						Herrería industrial y estructuras metálicas para proyectos especializados.
-						Fabricamos y montamos soluciones metálicas a la medida para empresas,
-						comercios e industria con seriedad, calidad y cumplimiento en cada proyecto.
+						Diseñamos e implementamos soluciones que optimizan el flujo de trabajo mediante principios de manufactura esbelta, integrando mobiliario industrial, estructuras metálicas y áreas de trabajo adaptadas a cada operación.
+Mejoramos la ergonomía, reducimos desperdicios y aumentamos la eficiencia operativa a través de soluciones funcionales y bien ejecutadas.
+
 					</motion.p>
 					<DesktopHomeActionButtons />
 				</div>
@@ -589,11 +600,11 @@ function HomeSectionContent({ mobile = false }) {
 								<p className="text-sm uppercase tracking-[0.28em] text-white/70">
 									ABS Servicios Industriales
 								</p>
-								<h2 className="mt-4 text-4xl font-bold leading-tight">
-									Especialistas en herrería industrial
+								<h2 className="mt-4 text-[1.85rem] font-bold leading-[1.16] 2xl:text-[2rem]">
+									Soluciones en metal y manufactura enfocadas en la optimización de procesos industriales.
 								</h2>
 							</div>
-							<div className="space-y-4">
+							<div className="space-y-3">
 								<div className="rounded-2xl border border-white/10 bg-[var(--abs-ink)] px-4 py-4 shadow-[0_18px_40px_rgba(0,0,0,0.26)]">
 									<div className="flex items-center gap-4">
 										<Image
@@ -613,14 +624,14 @@ function HomeSectionContent({ mobile = false }) {
 										</div>
 									</div>
 								</div>
-								<ul className="space-y-2.5">
+								<ul className="space-y-2">
 									{heroHighlights.map((item) => (
 										<li key={item} className="flex items-start gap-3">
 											<FontAwesomeIcon
 												icon={faCheck}
 												className="mt-1 text-sm text-[var(--abs-red)]"
 											/>
-											<span className="text-base leading-relaxed">{item}</span>
+											<span className="text-[0.94rem] leading-snug 2xl:text-base">{item}</span>
 										</li>
 									))}
 								</ul>
@@ -657,14 +668,14 @@ function ServicesSectionContent() {
 					{services.map((service, index) => (
 						<motion.div
 							key={service.title}
-							className="min-h-[138px] rounded-2xl border border-gray-200 bg-white p-4 shadow-sm lg:min-h-[160px] lg:p-6"
+							className="min-h-[138px] rounded-2xl border border-gray-200 bg-white p-4 shadow-sm lg:min-h-[190px] lg:p-6"
 							initial={{ y: 40, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{ delay: index * 0.08, type: "spring" }}>
-							<h3 className="mb-2 text-xl font-bold text-black lg:mb-3 lg:text-2xl">
+							<h3 className="mb-2 text-xl font-bold leading-tight text-black lg:mb-3 lg:text-[1.35rem]">
 								{service.title}
 							</h3>
-							<p className="title text-sm leading-[1.55rem] tracking-wide text-[var(--abs-muted)] lg:text-base lg:leading-[1.7rem] lg:tracking-wider">
+							<p className="title text-sm leading-[1.55rem] tracking-wide text-[var(--abs-muted)] lg:text-[0.96rem] lg:leading-[1.55rem] lg:tracking-wide">
 								{service.description}
 							</p>
 						</motion.div>
@@ -675,40 +686,167 @@ function ServicesSectionContent() {
 	);
 }
 
+function ProcessStepVisual({ variant, title }) {
+	const commonMotion = {
+		animate: { y: [0, -4, 0] },
+		transition: { duration: 3.2, repeat: Infinity, ease: "easeInOut" },
+	};
+
+	return (
+		<div className="relative mt-1 flex h-32 w-32 items-center justify-center overflow-hidden rounded-full border-4 border-white bg-gradient-to-br from-slate-50 via-white to-slate-200 shadow-[0_16px_38px_rgba(17,25,35,0.16)] lg:h-36 lg:w-36">
+			<motion.div
+				className="absolute -right-5 -top-4 h-16 w-16 rounded-full bg-[color:rgba(219,31,38,0.12)]"
+				animate={{ scale: [1, 1.18, 1], opacity: [0.55, 0.9, 0.55] }}
+				transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
+			/>
+			<motion.div
+				className="absolute -bottom-4 -left-5 h-20 w-20 rounded-full bg-[color:rgba(17,25,35,0.08)]"
+				animate={{ scale: [1.12, 1, 1.12], opacity: [0.45, 0.72, 0.45] }}
+				transition={{ duration: 4.1, repeat: Infinity, ease: "easeInOut" }}
+			/>
+
+			{variant === "requirement" && (
+				<motion.svg
+					{...commonMotion}
+					aria-label={title}
+					viewBox="0 0 120 120"
+					className="relative z-10 h-[5.8rem] w-[5.8rem]">
+					<rect x="34" y="18" width="52" height="68" rx="7" fill="#fff" stroke="#111923" strokeWidth="4" />
+					<path d="M76 18v18h10" fill="none" stroke="#111923" strokeWidth="4" strokeLinecap="round" />
+					<path d="M44 43h28M44 55h24M44 67h18" stroke="#505b69" strokeWidth="4" strokeLinecap="round" />
+					<motion.path
+						d="m44 82 8 8 19-22"
+						fill="none"
+						stroke="#db1f26"
+						strokeWidth="6"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						initial={{ pathLength: 0 }}
+						whileInView={{ pathLength: 1 }}
+						transition={{ duration: 0.9, delay: 0.15 }}
+					/>
+				</motion.svg>
+			)}
+
+			{variant === "analysis" && (
+				<motion.svg
+					{...commonMotion}
+					aria-label={title}
+					viewBox="0 0 120 120"
+					className="relative z-10 h-[5.9rem] w-[5.9rem]">
+					<rect x="20" y="30" width="74" height="54" rx="8" fill="#fff" stroke="#111923" strokeWidth="4" />
+					<path d="M32 72 48 58l14 9 22-28" fill="none" stroke="#db1f26" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+					<circle cx="48" cy="58" r="5" fill="#111923" />
+					<circle cx="62" cy="67" r="5" fill="#111923" />
+					<circle cx="84" cy="39" r="5" fill="#111923" />
+					<motion.circle
+						cx="85"
+						cy="77"
+						r="16"
+						fill="none"
+						stroke="#505b69"
+						strokeWidth="5"
+						animate={{ scale: [1, 1.08, 1] }}
+						transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+					/>
+					<path d="m97 89 11 11" stroke="#505b69" strokeWidth="6" strokeLinecap="round" />
+				</motion.svg>
+			)}
+
+			{variant === "validation" && (
+				<motion.svg
+					{...commonMotion}
+					aria-label={title}
+					viewBox="0 0 120 120"
+					className="relative z-10 h-[5.9rem] w-[5.9rem]">
+					<rect x="29" y="22" width="56" height="70" rx="8" fill="#fff" stroke="#111923" strokeWidth="4" />
+					<rect x="43" y="16" width="28" height="14" rx="5" fill="#db1f26" />
+					<path d="M42 47h30M42 59h26M42 71h18" stroke="#505b69" strokeWidth="4" strokeLinecap="round" />
+					<motion.path
+						d="m67 81 8 8 20-25"
+						fill="none"
+						stroke="#db1f26"
+						strokeWidth="6"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						initial={{ pathLength: 0 }}
+						whileInView={{ pathLength: 1 }}
+						transition={{ duration: 0.9, delay: 0.2 }}
+					/>
+				</motion.svg>
+			)}
+
+			{variant === "fabrication" && (
+				<motion.svg
+					{...commonMotion}
+					aria-label={title}
+					viewBox="0 0 120 120"
+					className="relative z-10 h-[6rem] w-[6rem]">
+					<path d="M25 78h70v12H25z" fill="#111923" />
+					<path d="M34 78V54h52v24" fill="#fff" stroke="#111923" strokeWidth="5" strokeLinejoin="round" />
+					<path d="M42 54 55 38h26l-13 16" fill="none" stroke="#505b69" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+					<motion.circle
+						cx="84"
+						cy="40"
+						r="11"
+						fill="#db1f26"
+						animate={{ rotate: [0, 180, 360] }}
+						style={{ transformOrigin: "84px 40px" }}
+						transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+					/>
+					<path d="M84 25v30M69 40h30M73 29l22 22M95 29 73 51" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+					<path d="M34 90 24 104M86 90l10 14" stroke="#111923" strokeWidth="5" strokeLinecap="round" />
+				</motion.svg>
+			)}
+		</div>
+	);
+}
+
 function ProcessSectionContent() {
 	return (
 		<div className="w-full px-5 pt-20 pb-8 lg:h-screen lg:w-screen lg:overflow-hidden lg:px-10 lg:py-20">
-			<div className="mx-auto flex max-w-7xl flex-col justify-center">
+			<div className="mx-auto flex max-w-7xl flex-col items-center justify-center text-center">
+				<motion.p
+					className="title text-sm font-bold uppercase tracking-[0.22em] text-[var(--abs-red)]"
+					initial={{ y: -18, opacity: 0 }}
+					whileInView={{ y: 0, opacity: 1 }}
+					transition={{ delay: 0.05, type: "spring" }}>
+					Proceso
+				</motion.p>
 				<motion.h1
-					className="px-2 text-[2.2rem] font-bold text-black lg:px-0 lg:text-6xl"
-					initial={{ x: -100, opacity: 0 }}
-					whileInView={{ x: 0, opacity: 1 }}
+					className="mt-2 px-2 text-[2.2rem] font-bold leading-tight text-black lg:px-0 lg:text-5xl"
+					initial={{ y: -24, opacity: 0 }}
+					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ delay: 0.1, type: "spring" }}>
 					¿Cómo trabajamos?
 				</motion.h1>
-				<Hr />
 				<motion.p
-					className="title mt-2 mb-4 max-w-5xl text-[0.97rem] leading-[1.6rem] tracking-wide text-[var(--abs-muted)] lg:mb-5 lg:text-lg lg:tracking-wider"
-					initial={{ x: -100, opacity: 0 }}
-					whileInView={{ x: 0, opacity: 1 }}
+					className="title mx-auto mt-3 max-w-4xl text-[0.97rem] leading-[1.6rem] tracking-wide text-[var(--abs-muted)] lg:text-base lg:leading-[1.65rem]"
+					initial={{ y: -20, opacity: 0 }}
+					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ delay: 0.2, type: "spring" }}>
-					Un proceso claro para que sepas en todo momento qué estamos haciendo con tu proyecto.
+					Un proceso claro para transformar tu requerimiento en una solución fabricada, validada e integrada a tu operación.
 				</motion.p>
-				<div className="grid w-full grid-cols-1 gap-3 lg:grid-cols-2">
+				<div className="relative mt-8 grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:mt-10 lg:grid-cols-4 lg:gap-8">
+					<div className="pointer-events-none absolute left-[8%] right-[8%] top-[2.1rem] hidden h-px bg-gray-200 lg:block" />
 					{workflowSteps.map((step, index) => (
 						<motion.div
 							key={step.number}
-							className="min-h-[148px] rounded-2xl border border-gray-200 bg-white p-4 shadow-sm lg:min-h-[170px] lg:p-6"
+							className="relative flex flex-col items-center text-center"
 							initial={{ y: 40, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{ delay: index * 0.08, type: "spring" }}>
-							<p className="mb-1 text-base tracking-[0.2em] text-[var(--abs-red)] lg:mb-2 lg:text-lg lg:tracking-[0.24em]">
-								{step.number}
+							<p className="title text-sm font-bold uppercase tracking-[0.12em] text-[var(--abs-dark)]">
+								Paso {index + 1}
 							</p>
-							<h3 className="mb-2 text-xl font-bold leading-tight text-black lg:mb-3 lg:text-2xl">
+							<div className="relative z-10 my-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 ring-4 ring-white">
+								<span className="h-3 w-3 rounded-full bg-[var(--abs-dark)] shadow-[0_0_0_2px_rgba(219,31,38,0.08)]" />
+							</div>
+							<ProcessStepVisual variant={step.visual} title={step.title} />
+							<h3 className="mt-5 text-xl font-bold leading-tight text-black lg:text-[1.25rem]">
 								{step.title}
 							</h3>
-							<p className="title text-sm leading-[1.55rem] tracking-wide text-[var(--abs-muted)] lg:text-base lg:leading-[1.7rem] lg:tracking-wider">
+							<p className="title mt-2 max-w-[18rem] text-sm leading-[1.45rem] tracking-wide text-[var(--abs-muted)] lg:text-[0.92rem] lg:leading-[1.45rem] lg:tracking-wide">
 								{step.description}
 							</p>
 						</motion.div>
