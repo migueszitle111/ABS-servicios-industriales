@@ -424,7 +424,7 @@ function PortfolioCard({ item, index, mobile = false }) {
 
 	return (
 		<motion.div
-			className={`group/tes relative z-10 flex w-full flex-col items-start justify-center overflow-hidden bg-[var(--abs-dark)] ${
+			className={`group/tes relative z-10 flex w-full flex-col items-start justify-center overflow-hidden bg-white ${
 				mobile ? "aspect-[1/1.05]" : "aspect-[1.18/1]"
 			}`}
 			initial={{ opacity: 0, x: -200 }}
@@ -433,25 +433,31 @@ function PortfolioCard({ item, index, mobile = false }) {
 			onTouchStart={mobile ? () => setIsTouchActive(true) : undefined}
 			onTouchEnd={mobile ? () => setIsTouchActive(false) : undefined}
 			onTouchCancel={mobile ? () => setIsTouchActive(false) : undefined}>
+			<div aria-hidden="true" className="absolute inset-0 z-0 overflow-hidden bg-white">
+				<motion.div
+					className="absolute inset-y-0 w-28 -skew-x-12 bg-[linear-gradient(90deg,transparent,rgba(219,31,38,0.09),transparent)]"
+					initial={{ left: "-28%" }}
+					animate={{ left: ["-28%", "116%"] }}
+					transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
+				/>
+			</div>
 			<Image
 				src={item.image}
 				alt={item.title}
 				fill
 				unoptimized
-				className={`object-cover object-center transition-all duration-500 ease ${
-					showImageOnTouch ? "opacity-100" : "opacity-20 group-hover/tes:opacity-100"
-				}`}
+				className="z-10 object-contain object-center transition-transform duration-500 ease group-hover/tes:scale-[1.01]"
 				sizes="(max-width: 768px) 100vw, 50vw"
 			/>
 			<div
-				className={`absolute inset-0 transition-all duration-500 ease ${
+				className={`absolute inset-0 z-20 transition-all duration-500 ease ${
 					showImageOnTouch
-						? "bg-[color:rgba(17,25,35,0.06)]"
-						: "bg-[color:rgba(5,5,5,0.62)] group-hover/tes:bg-[color:rgba(17,25,35,0.2)] lg:bg-[color:rgba(17,25,35,0.42)]"
+						? "bg-transparent"
+						: "bg-[color:rgba(5,5,5,0.58)] group-hover/tes:bg-transparent lg:bg-[color:rgba(17,25,35,0.42)] lg:group-hover/tes:bg-transparent"
 				}`}
 			/>
 			<div
-				className={`absolute inset-0 z-10 flex flex-col justify-end px-5 pb-6 text-center transition-all duration-500 ease lg:justify-center lg:px-8 lg:pb-0 ${
+				className={`absolute inset-0 z-30 flex flex-col justify-end px-5 pb-6 text-center transition-all duration-500 ease lg:justify-center lg:px-8 lg:pb-0 ${
 					showImageOnTouch ? "opacity-0" : "opacity-100 group-hover/tes:opacity-0"
 				}`}>
 				<h1 className="mb-3 text-[1.5rem] font-bold leading-[1.08] text-white lg:text-[2.05rem]">
@@ -493,10 +499,9 @@ function HomeSectionContent({ mobile = false }) {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.2, type: "spring" }}>
-							Herrería industrial y estructuras metálicas para proyectos especializados.
-							Fabricamos y montamos soluciones metálicas a la medida para empresas,
-							comercios e industria con seriedad, calidad y cumplimiento en cada
-							proyecto.
+							Diseñamos e implementamos soluciones que optimizan el flujo de trabajo mediante principios de manufactura esbelta, integrando mobiliario industrial, estructuras metálicas y áreas de trabajo adaptadas a cada operación.
+                            Mejoramos la ergonomía, reducimos desperdicios y aumentamos la eficiencia operativa a través de soluciones funcionales y bien ejecutadas.
+
 						</motion.p>
 						<MobileHomeActionButtons />
 					</div>
@@ -536,7 +541,7 @@ function HomeSectionContent({ mobile = false }) {
 												ABS Servicios Industriales
 											</p>
 											<p className="mt-1 text-[11px] font-semibold text-white/80">
-												Herrería industrial · Tijuana, B.C.
+												Tijuana, B.C.
 											</p>
 										</div>
 									</div>
@@ -620,7 +625,7 @@ Mejoramos la ergonomía, reducimos desperdicios y aumentamos la eficiencia opera
 												ABS Servicios Industriales
 											</p>
 											<p className="mt-1 text-sm font-semibold text-white/80">
-												Herrería industrial · Tijuana, B.C.
+												Tijuana, B.C.
 											</p>
 										</div>
 									</div>
@@ -882,7 +887,7 @@ function PortfolioSectionContent({ pageItems, pageIndex = 0, mobile = false }) {
 					</div>
 					<div className="grid w-full grid-cols-1 items-stretch gap-4">
 						{pageItems.map((item, index) => (
-							<PortfolioCard key={item.title} item={item} index={index} mobile />
+							<PortfolioCard key={item.image} item={item} index={index} mobile />
 						))}
 					</div>
 				</div>
@@ -917,7 +922,7 @@ function PortfolioSectionContent({ pageItems, pageIndex = 0, mobile = false }) {
 						pageIndex === 0 ? "" : "my-auto translate-y-4"
 					}`}>
 					{pageItems.map((item, index) => (
-						<PortfolioCard key={item.title} item={item} index={pageIndex * 2 + index} />
+						<PortfolioCard key={item.image} item={item} index={pageIndex * 2 + index} />
 					))}
 				</div>
 			</div>
