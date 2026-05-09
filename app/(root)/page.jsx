@@ -418,15 +418,14 @@ function PortfolioScrollIndicator() {
 	);
 }
 
-function PortfolioCard({ item, index, mobile = false }) {
+function PortfolioCard({ item, index, mobile = false, compact = false }) {
 	const [isTouchActive, setIsTouchActive] = useState(false);
 	const showImageOnTouch = mobile && isTouchActive;
+	const aspectClass = mobile ? "aspect-[1/1.05]" : compact ? "aspect-[1.34/1]" : "aspect-[1.18/1]";
 
 	return (
 		<motion.div
-			className={`group/tes relative z-10 flex w-full flex-col items-start justify-center overflow-hidden bg-white ${
-				mobile ? "aspect-[1/1.05]" : "aspect-[1.18/1]"
-			}`}
+			className={`group/tes relative z-10 flex w-full flex-col items-start justify-center overflow-hidden bg-white ${aspectClass}`}
 			initial={{ opacity: 0, x: -200 }}
 			whileInView={{ opacity: 1, x: 0 }}
 			transition={{ delay: index * 0.03, type: "spring" }}
@@ -896,8 +895,11 @@ function PortfolioSectionContent({ pageItems, pageIndex = 0, mobile = false }) {
 	}
 
 	return (
-		<div className={`h-screen w-screen px-10 ${pageIndex === 0 ? "pt-22 pb-10" : "py-11"}`}>
-			<div className="mx-auto flex h-full max-w-[96rem] flex-col justify-center">
+		<div className={`h-screen w-screen px-10 ${pageIndex === 0 ? "pt-28 pb-8" : "py-11"}`}>
+			<div
+				className={`mx-auto flex h-full max-w-[96rem] flex-col ${
+					pageIndex === 0 ? "justify-start" : "justify-center"
+				}`}>
 				{pageIndex === 0 && (
 					<div className="shrink-0">
 						<motion.h1
@@ -922,7 +924,12 @@ function PortfolioSectionContent({ pageItems, pageIndex = 0, mobile = false }) {
 						pageIndex === 0 ? "" : "my-auto translate-y-4"
 					}`}>
 					{pageItems.map((item, index) => (
-						<PortfolioCard key={item.image} item={item} index={pageIndex * 2 + index} />
+						<PortfolioCard
+							key={item.image}
+							item={item}
+							index={pageIndex * 2 + index}
+							compact={pageIndex === 0}
+						/>
 					))}
 				</div>
 			</div>
@@ -932,7 +939,7 @@ function PortfolioSectionContent({ pageItems, pageIndex = 0, mobile = false }) {
 
 function ContactSectionContent() {
 	return (
-		<div className="w-full px-5 pt-20 pb-8 lg:h-screen lg:w-screen lg:px-10 lg:py-16">
+		<div className="w-full px-5 pt-20 pb-8 lg:h-screen lg:w-screen lg:px-10 lg:pt-28 lg:pb-8">
 			<div className="mx-auto flex max-w-[92rem] flex-col justify-center lg:h-full">
 				<motion.h1
 					className="px-2 text-[2.2rem] font-bold text-black lg:px-0 lg:text-6xl"

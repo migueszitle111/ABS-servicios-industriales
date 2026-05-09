@@ -123,7 +123,7 @@ export default function Navbar() {
 				<div>
 					<CompanyLogo
 						variant="full"
-						className="ml-2 h-16 w-auto max-w-[8.25rem] object-contain md:ml-0 md:h-20 md:max-w-[10rem]"
+						className="ml-2 h-16 w-auto max-w-[8.25rem] translate-y-2 object-contain md:ml-0 md:h-20 md:max-w-[10rem] md:translate-y-3"
 					/>
 				</div>
 				<div className="flex flex-row items-center">
