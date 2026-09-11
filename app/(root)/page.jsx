@@ -420,7 +420,7 @@ function PortfolioScrollIndicator() {
 
 function PortfolioCard({ item, index, mobile = false, compact = false }) {
 	const [isTouchActive, setIsTouchActive] = useState(false);
-	const showImageOnTouch = mobile && isTouchActive;
+	const showOverlay = mobile ? isTouchActive : false;
 	const aspectClass = mobile ? "aspect-[1/1.05]" : compact ? "aspect-[1.34/1]" : "aspect-[1.18/1]";
 
 	return (
@@ -449,31 +449,17 @@ function PortfolioCard({ item, index, mobile = false, compact = false }) {
 				sizes="(max-width: 768px) 100vw, 50vw"
 			/>
 			<div
-				className={`absolute inset-0 z-20 transition-all duration-500 ease ${
-					showImageOnTouch
-						? "bg-transparent"
-						: "bg-[color:rgba(5,5,5,0.58)] group-hover/tes:bg-transparent lg:bg-[color:rgba(17,25,35,0.42)] lg:group-hover/tes:bg-transparent"
+				className={`absolute inset-0 z-20 transition-all duration-500 ease bg-transparent lg:group-hover/tes:bg-[color:rgba(17,25,35,0.55)] ${
+					showOverlay ? "bg-[color:rgba(5,5,5,0.58)]" : ""
 				}`}
 			/>
 			<div
-				className={`absolute inset-0 z-30 flex flex-col justify-end px-5 pb-6 text-center transition-all duration-500 ease lg:justify-center lg:px-8 lg:pb-0 ${
-					showImageOnTouch ? "opacity-0" : "opacity-100 group-hover/tes:opacity-0"
+				className={`absolute inset-0 z-30 flex flex-col items-center justify-center px-5 text-center transition-all duration-500 ease lg:px-8 opacity-0 lg:group-hover/tes:opacity-100 ${
+					showOverlay ? "opacity-100" : ""
 				}`}>
-				<h1 className="mb-3 text-[1.5rem] font-bold leading-[1.08] text-white lg:text-[2.05rem]">
+				<h1 className="text-[1.5rem] font-bold leading-[1.08] text-white lg:text-[2.05rem]">
 					{item.title}
 				</h1>
-				<p className="mx-auto max-w-[92%] text-[14px] leading-[1.45] text-white/92 lg:max-w-[88%] lg:text-[17px]">
-					{item.description}
-				</p>
-				<div className="mt-3 flex flex-row flex-wrap items-center justify-center lg:mt-4">
-					{item.tech.map((tech, techIndex) => (
-						<span
-							key={techIndex}
-							className="m-1 bg-[var(--abs-dark)] px-3 py-1 text-xs text-white lg:px-3 lg:py-1.5 lg:text-[15px]">
-							{tech}
-						</span>
-					))}
-				</div>
 			</div>
 		</motion.div>
 	);
