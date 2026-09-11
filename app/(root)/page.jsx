@@ -458,7 +458,7 @@ function PortfolioCard({ item, index, mobile = false, compact = false }) {
 					showOverlay ? "opacity-100" : ""
 				}`}>
 				<h1
-					className="max-w-full break-words rounded-md bg-[color:rgba(5,5,5,0.65)] px-4 py-2 text-[1.15rem] font-bold leading-[1.15] text-white shadow-lg sm:text-[1.35rem] lg:bg-transparent lg:px-0 lg:py-0 lg:text-[2.05rem] lg:shadow-none"
+					className="max-w-full break-words rounded-md bg-[color:rgba(5,5,5,0.65)] px-4 py-2 text-[1.45rem] font-bold leading-[1.15] text-white shadow-lg sm:text-[1.65rem] lg:bg-transparent lg:px-0 lg:py-0 lg:text-[2.05rem] lg:shadow-none"
 					style={{ textShadow: "0 2px 8px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.7)" }}>
 					{item.title}
 				</h1>
