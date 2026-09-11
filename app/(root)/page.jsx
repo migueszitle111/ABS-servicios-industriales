@@ -450,14 +450,16 @@ function PortfolioCard({ item, index, mobile = false, compact = false }) {
 			/>
 			<div
 				className={`absolute inset-0 z-20 transition-all duration-500 ease bg-transparent lg:group-hover/tes:bg-[color:rgba(17,25,35,0.55)] ${
-					showOverlay ? "bg-[color:rgba(5,5,5,0.58)]" : ""
+					showOverlay ? "bg-[color:rgba(5,5,5,0.72)]" : ""
 				}`}
 			/>
 			<div
-				className={`absolute inset-0 z-30 flex flex-col items-center justify-center px-5 text-center transition-all duration-500 ease lg:px-8 opacity-0 lg:group-hover/tes:opacity-100 ${
+				className={`absolute inset-0 z-30 flex flex-col items-center justify-center px-4 text-center transition-all duration-500 ease lg:px-8 opacity-0 lg:group-hover/tes:opacity-100 ${
 					showOverlay ? "opacity-100" : ""
 				}`}>
-				<h1 className="text-[1.5rem] font-bold leading-[1.08] text-white lg:text-[2.05rem]">
+				<h1
+					className="max-w-full break-words rounded-md bg-[color:rgba(5,5,5,0.65)] px-4 py-2 text-[1.15rem] font-bold leading-[1.15] text-white shadow-lg sm:text-[1.35rem] lg:bg-transparent lg:px-0 lg:py-0 lg:text-[2.05rem] lg:shadow-none"
+					style={{ textShadow: "0 2px 8px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.7)" }}>
 					{item.title}
 				</h1>
 			</div>
